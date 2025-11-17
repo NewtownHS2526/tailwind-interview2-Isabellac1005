@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 7: Forms & Inputs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            Level 7: Building Forms with Tailwind
+        </h1>
+
+        <!-- Task 1: Basic Input -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 1: Styled Input Field</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input 
+                        type="text" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="Enter your name"
+                    >
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 2: Form Layout with Labels -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 2: Complete Form Layout</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                    <input 
+                        type="email" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="email@example.com"
+                    >
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Password</label>
+                    <input 
+                        type="password" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="Enter password"
+                    >
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 3: Textarea -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 3: Textarea Styling</h2>
+            <form>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea 
+                        rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                        placeholder="Enter your message here..."
+                    ></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 4: Select Dropdown -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 4: Select Dropdown</h2>
+            <form>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Country</label>
+                    <select 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white"
+                    >
+                        <option>Select a country</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                        <option>Australia</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 5: Checkboxes & Radios -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 5: Checkboxes & Radio Buttons</h2>
+            <form class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <input 
+                        type="checkbox" 
+                        id="terms"
+                        class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    >
+                    <label for="terms" class="text-gray-700">I agree to the terms and conditions</label>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700 font-medium mb-2">Select your preference:</p>
+                    <div class="flex items-center space-x-2">
+                        <input 
+                            type="radio" 
+                            id="option1"
+                            name="preference"
+                            class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
+                        >
+                        <label for="option1" class="text-gray-700">Option 1</label>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <input 
+                            type="radio" 
+                            id="option2"
+                            name="preference"
+                            class="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
+                        >
+                        <label for="option2" class="text-gray-700">Option 2</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 6: Validation States -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 6: Form Validation States</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input 
+                        type="email" 
+                        class="w-full px-4 py-2 border border-red-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                        placeholder="email@example.com"
+                    >
+                    <p class="text-red-600 text-sm mt-1">Please enter a valid email address</p>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Username</label>
+                    <input 
+                        type="text" 
+                        class="w-full px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                        placeholder="username"
+                        value="johndoe"
+                    >
+                    <p class="text-green-600 text-sm mt-1">Username is available</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 7: Complete Registration Form -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 7: Complete Registration Form</h2>
+            <form class="space-y-6 max-w-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">First Name</label>
+                        <input 
+                            type="text" 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="John"
+                        >
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Last Name</label>
+                        <input 
+                            type="text" 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Doe"
+                        >
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input 
+                        type="email" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="email@example.com"
+                    >
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Password</label>
+                    <input 
+                        type="password" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="Create a password"
+                    >
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Bio</label>
+                    <textarea 
+                        rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                        placeholder="Tell us about yourself..."
+                    ></textarea>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input 
+                        type="checkbox" 
+                        id="newsletter"
+                        class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    >
+                    <label for="newsletter" class="text-gray-700">Subscribe to newsletter</label>
+                </div>
+                <button 
+                    type="submit"
+                    class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                >
+                    Create Account
+                </button>
+            </form>
+        </div>
+
+        <!-- Navigation -->
+        <div class="mt-8 flex justify-between">
+            <a href="../level6/six.html" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                ← Previous Level
+            </a>
+            <a href="../level8/eight.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Next Level: Advanced Styling →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
