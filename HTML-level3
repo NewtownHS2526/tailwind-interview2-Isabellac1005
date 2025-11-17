@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3: Grid Layouts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            Level 3: CSS Grid Layouts with Tailwind
+        </h1>
+
+        <!-- TASK 1: Basic Grid -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 1: Create a 3-Column Grid</h2>
+            <div class="bg-gray-200 p-4 rounded grid grid-cols-3 gap-4">
+                <div class="bg-blue-500 text-white p-6 rounded text-center">Column 1</div>
+                <div class="bg-green-500 text-white p-6 rounded text-center">Column 2</div>
+                <div class="bg-purple-500 text-white p-6 rounded text-center">Column 3</div>
+            </div>
+        </div>
+
+        <!-- TASK 2: Grid Column Span -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 2: Column Spanning</h2>
+            <div class="bg-gray-200 p-4 rounded grid grid-cols-3 gap-4">
+                <div class="bg-red-500 text-white p-6 rounded text-center col-span-2">Spans 2 columns</div>
+                <div class="bg-yellow-500 text-white p-6 rounded text-center">Column 3</div>
+                <div class="bg-orange-500 text-white p-6 rounded text-center">Column 4</div>
+                <div class="bg-pink-500 text-white p-6 rounded text-center">Column 5</div>
+            </div>
+        </div>
+
+        <!-- TASK 3: Grid Rows -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 3: Row Spanning</h2>
+            <div class="bg-gray-200 p-4 rounded grid grid-cols-3 grid-rows-2 gap-4">
+                <div class="bg-teal-500 text-white p-6 rounded text-center row-span-2">Spans 2 rows</div>
+                <div class="bg-pink-500 text-white p-6 rounded text-center">Item 2</div>
+                <div class="bg-indigo-500 text-white p-6 rounded text-center">Item 3</div>
+                <div class="bg-cyan-500 text-white p-6 rounded text-center">Item 4</div>
+                <div class="bg-emerald-500 text-white p-6 rounded text-center">Item 5</div>
+            </div>
+        </div>
+
+        <!-- TASK 4: Responsive Grid -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 4: Responsive Grid</h2>
+            <div class="bg-gray-200 p-4 rounded grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-rose-500 text-white p-6 rounded text-center">Item 1</div>
+                <div class="bg-amber-500 text-white p-6 rounded text-center">Item 2</div>
+                <div class="bg-lime-500 text-white p-6 rounded text-center">Item 3</div>
+                <div class="bg-sky-500 text-white p-6 rounded text-center">Item 4</div>
+                <div class="bg-fuchsia-500 text-white p-6 rounded text-center">Item 5</div>
+                <div class="bg-violet-500 text-white p-6 rounded text-center">Item 6</div>
+            </div>
+        </div>
+
+        <!-- TASK 5: Grid Gaps -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 5: Grid Gaps</h2>
+            <div class="bg-gray-200 p-4 rounded grid grid-cols-3 gap-6">
+                <div class="bg-cyan-500 text-white p-6 rounded text-center">Item 1</div>
+                <div class="bg-emerald-500 text-white p-6 rounded text-center">Item 2</div>
+                <div class="bg-violet-500 text-white p-6 rounded text-center">Item 3</div>
+                <div class="bg-orange-500 text-white p-6 rounded text-center">Item 4</div>
+                <div class="bg-pink-500 text-white p-6 rounded text-center">Item 5</div>
+                <div class="bg-blue-500 text-white p-6 rounded text-center">Item 6</div>
+            </div>
+        </div>
+
+        <!-- TASK 6: Card Gallery -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 6: Create a Card Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Card 1</h3>
+                    <p class="text-gray-600">This is a card in the grid.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Card 2</h3>
+                    <p class="text-gray-600">This is a card in the grid.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Card 3</h3>
+                    <p class="text-gray-600">This is a card in the grid.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Card 4</h3>
+                    <p class="text-gray-600">This is a card in the grid.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="mt-8 flex justify-between">
+            <a href="../level2/two.html" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                ← Previous Level
+            </a>
+            <a href="../level4/four.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Next Level: Components →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
