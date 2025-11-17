@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1: Tailwind Basics - Colors, Text & Spacing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            Level 1: Tailwind Basics - Colors, Text & Spacing
+        </h1>
+        
+        <!-- TASK 1: Modified -->
+        <div class="bg-green-500 text-white p-6 rounded-lg mb-4">
+            <p class="text-lg">Change my background color to green!</p>
+        </div>
+
+        <!-- TASK 2: Modified -->
+        <div class="bg-white p-6 rounded-lg mb-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Text Styling Challenge</h2>
+            <p class="text-2xl font-bold text-purple-600">
+                Style this text: Make me bigger, bolder, and purple!
+            </p>
+        </div>
+
+        <!-- TASK 3: Modified -->
+        <div class="bg-white p-6 rounded-lg mb-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Spacing Challenge</h2>
+            <div class="bg-yellow-200 p-4 pl-12 mt-8 mb-8">
+                <p class="text-gray-800">
+                    Add more spacing to this element!
+                </p>
+            </div>
+        </div>
+
+        <!-- TASK 4: Modified -->
+        <div class="bg-white rounded-lg p-6 mb-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Border Challenge</h2>
+            <div class="bg-pink-100 border-2 border-red-500 rounded-xl p-6">
+                <p class="text-gray-800">Add a border and make me more rounded!</p>
+            </div>
+        </div>
+
+        <!-- TASK 5: Verified -->
+        <div class="bg-white rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Final Challenge: Create a Card</h2>
+            <div class="bg-indigo-500 text-white p-8 rounded-xl mb-4">
+                <h3 class="text-3xl font-bold">Congratulations!</h3>
+                <p class="text-lg mt-4">You've completed Level 1. Move to Level 2 to learn about Flexbox layouts!</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="mt-8 text-center">
+            <a href="../level2/two.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Next Level: Flexbox Layouts →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
