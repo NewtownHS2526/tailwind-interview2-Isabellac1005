@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 4: Components - Buttons & Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            Level 4: Building Components - Buttons & Cards
+        </h1>
+
+        <!-- Task 1: Buttons -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 1: Create Buttons</h2>
+            <div class="flex gap-4">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    Primary Button
+                </button>
+                <button class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                    Secondary Button
+                </button>
+            </div>
+        </div>
+
+        <!-- Task 2: Button Variants -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 2: Button Sizes & Variants</h2>
+            <div class="flex gap-4 items-center flex-wrap">
+                <button class="bg-green-600 text-white py-2 px-4 text-sm rounded-lg hover:bg-green-700 transition-colors">
+                    Small Button
+                </button>
+                <button class="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                    Medium Button
+                </button>
+                <button class="bg-green-600 text-white py-4 px-8 text-lg rounded-lg hover:bg-green-700 transition-colors">
+                    Large Button
+                </button>
+                <button class="border-2 border-blue-600 text-blue-600 bg-transparent py-3 px-6 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
+                    Outline Button
+                </button>
+            </div>
+        </div>
+
+        <!-- Task 3: Basic Card -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 3: Create a Card</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg p-6 shadow-md max-w-md">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Card Title</h3>
+                    <p class="text-gray-600">
+                        This is a basic card component. Cards are great for displaying content in a contained format.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task 4: Card with Image -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 4: Card with Image</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-md max-w-md overflow-hidden">
+                    <div class="w-full h-48 bg-gradient-to-r from-purple-400 to-pink-400 rounded-t-lg"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Card with Image</h3>
+                        <p class="text-gray-600">
+                            This card has an image header. The image uses a gradient background as a placeholder.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task 5: Card with Action Button -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 5: Card with Action Button</h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-md max-w-md p-6 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-gray-800">Product Card</h3>
+                    <p class="text-gray-600">
+                        This is a product card with a call-to-action button.
+                    </p>
+                    <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors w-full">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task 6: Card Grid -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 6: Card Grid Layout</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col gap-4">
+                    <h3 class="text-xl font-bold text-gray-800">Card 1</h3>
+                    <p class="text-gray-600">First card in the grid.</p>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                        Learn More
+                    </button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col gap-4">
+                    <h3 class="text-xl font-bold text-gray-800">Card 2</h3>
+                    <p class="text-gray-600">Second card in the grid.</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
+                        Learn More
+                    </button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col gap-4">
+                    <h3 class="text-xl font-bold text-gray-800">Card 3</h3>
+                    <p class="text-gray-600">Third card in the grid.</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="mt-8 flex justify-between">
+            <a href="../level3/three.html" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                ← Previous Level
+            </a>
+            <a href="../level5/five.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Next Level: Responsive Design →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
