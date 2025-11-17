@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 9: Complex Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            Level 9: Building Complex Components
+        </h1>
+
+        <!-- TASK 1: Modal Component -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 1: Modal Component</h2>
+            <button id="openModal" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Open Modal
+            </button>
+            <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden items-center justify-center z-50">
+                <div class="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 relative">
+                    <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">×</button>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Modal Title</h3>
+                        <p class="text-gray-600 mb-6">This is a modal dialog component with backdrop blur.</p>
+                        <div class="flex gap-4 justify-end">
+                            <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">Cancel</button>
+                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TASK 2: Dropdown Menu -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 2: Dropdown Menu</h2>
+            <div class="relative inline-block">
+                <button id="dropdownBtn" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 flex items-center gap-2">
+                    Menu
+                    <span>▼</span>
+                </button>
+                <div id="dropdownMenu" class="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg min-w-48 hidden">
+                    <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-t-lg">Profile</a>
+                    <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Settings</a>
+                    <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-b-lg">Logout</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TASK 3: Toast Notification -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 3: Toast Notification</h2>
+            <button id="showToast" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
+                Show Toast
+            </button>
+            <div id="toast" class="fixed top-4 right-4 bg-white rounded-lg shadow-xl p-4 max-w-sm z-50 border-l-4 border-green-500 hidden transition-transform transform translate-x-32">
+                <div class="flex items-start gap-3">
+                    <div class="text-green-500 text-xl">✓</div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-gray-800">Success!</h4>
+                        <p class="text-gray-600 text-sm">Your action was completed successfully.</p>
+                    </div>
+                    <button id="closeToast" class="text-gray-400 hover:text-gray-600">×</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TASK 4: Tabs Component -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 4: Tabs Component</h2>
+            <div class="border-b border-gray-200">
+                <div class="flex gap-2">
+                    <button class="tab-btn px-6 py-3 text-blue-600 font-medium border-b-2 border-blue-600" data-tab="1">Tab 1</button>
+                    <button class="tab-btn px-6 py-3 text-gray-600 hover:text-gray-800" data-tab="2">Tab 2</button>
+                    <button class="tab-btn px-6 py-3 text-gray-600 hover:text-gray-800" data-tab="3">Tab 3</button>
+                </div>
+            </div>
+            <div class="mt-4 p-4 bg-gray-50 rounded-lg tab-content" data-content="1">Content for Tab 1 goes here.</div>
+            <div class="mt-4 p-4 bg-gray-50 rounded-lg tab-content hidden" data-content="2">Content for Tab 2 goes here.</div>
+            <div class="mt-4 p-4 bg-gray-50 rounded-lg tab-content hidden" data-content="3">Content for Tab 3 goes here.</div>
+        </div>
+
+        <!-- TASK 5: Accordion Component -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 5: Accordion Component</h2>
+            <div class="space-y-2">
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="accordion-btn w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50 rounded-t-lg">
+                        <span class="font-semibold text-gray-800">Accordion Item 1</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="accordion-content px-6 py-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">Content for accordion item 1 goes here.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="accordion-btn w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                        <span class="font-semibold text-gray-800">Accordion Item 2</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="accordion-content px-6 py-4 bg-gray-50 border-t border-gray-200 hidden">
+                        <p class
