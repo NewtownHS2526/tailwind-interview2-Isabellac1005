@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2: Flexbox Layouts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            Level 2: Flexbox Layouts with Tailwind
+        </h1>
+
+        <!-- TASK 1: Completed -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 1: Create a Flex Row</h2>
+            <div class="bg-gray-200 p-4 rounded flex flex-row gap-4">
+                <div class="bg-blue-500 text-white p-4 rounded">Item 1</div>
+                <div class="bg-green-500 text-white p-4 rounded">Item 2</div>
+                <div class="bg-purple-500 text-white p-4 rounded">Item 3</div>
+            </div>
+        </div>
+
+        <!-- TASK 2: Completed -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 2: Flex Column</h2>
+            <div class="bg-gray-200 p-4 rounded h-64 flex flex-col items-center justify-center gap-4">
+                <div class="bg-red-500 text-white p-4 rounded">Item 1</div>
+                <div class="bg-yellow-500 text-white p-4 rounded">Item 2</div>
+                <div class="bg-orange-500 text-white p-4 rounded">Item 3</div>
+            </div>
+        </div>
+
+        <!-- TASK 3: Completed -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 3: Justify Content</h2>
+            <div class="bg-gray-200 p-4 rounded flex flex-row justify-between">
+                <div class="bg-teal-500 text-white p-4 rounded">Left</div>
+                <div class="bg-pink-500 text-white p-4 rounded">Center</div>
+                <div class="bg-indigo-500 text-white p-4 rounded">Right</div>
+            </div>
+        </div>
+
+        <!-- TASK 4: Completed -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 4: Align Items</h2>
+            <div class="bg-gray-200 p-4 rounded flex flex-row items-center gap-4" style="height: 150px;">
+                <div class="bg-cyan-500 text-white p-4 rounded">Item 1</div>
+                <div class="bg-emerald-500 text-white p-4 rounded">Item 2</div>
+                <div class="bg-violet-500 text-white p-4 rounded">Item 3</div>
+            </div>
+        </div>
+
+        <!-- TASK 5: Completed -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 5: Flex Wrap</h2>
+            <div class="bg-gray-200 p-4 rounded flex flex-wrap gap-4">
+                <div class="bg-rose-500 text-white p-4 rounded w-32">Item 1</div>
+                <div class="bg-amber-500 text-white p-4 rounded w-32">Item 2</div>
+                <div class="bg-lime-500 text-white p-4 rounded w-32">Item 3</div>
+                <div class="bg-sky-500 text-white p-4 rounded w-32">Item 4</div>
+                <div class="bg-fuchsia-500 text-white p-4 rounded w-32">Item 5</div>
+            </div>
+        </div>
+
+        <!-- TASK 6: Completed -->
+        <div class="bg-white p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Task 6: Create a Navigation Bar</h2>
+            <div class="bg-gray-800 rounded-lg">
+                <div class="flex justify-between items-center p-4">
+                    <div class="text-white text-xl font-bold">Logo</div>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-white hover:text-blue-400">Home</a>
+                        <a href="#" class="text-white hover:text-blue-400">About</a>
+                        <a href="#" class="text-white hover:text-blue-400">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="mt-8 flex justify-between">
+            <a href="../level1/one.html" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                ← Previous Level
+            </a>
+            <a href="../level3/three.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Next Level: Grid Layouts →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
